@@ -1,0 +1,177 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.controls-panel {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.controls-panel h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+.form-group select:focus {
+  border-color: var(--brand-gold);
+}
+
+.btn {
+  background: var(--brand-gold);
+  color: #000;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #d4b274;
+}
+
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* The Printable Sticker Box */
+.sticker {
+  width: 300px;
+  height: 450px;
+  background: linear-gradient(135deg, #1A1A24, #0A0A0E);
+  border: 4px solid var(--brand-gold);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.sticker::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(201, 161, 90, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.sticker-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 1;
+}
+
+.sticker-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.brand-name span {
+  color: var(--brand-gold);
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.tagline span {
+  color: var(--brand-red);
+}
+
+.qr-container {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  z-index: 1;
+  border: 3px solid var(--brand-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-code {
+  display: block;
+}
+
+.instructions {
+  font-size: 13px;
+  font-weight: 600;
+  color: #aaa;
+  line-height: 1.5;
+  z-index: 1;
+}
+
+.instructions strong {
+  color: var(--brand-gold);
+}
